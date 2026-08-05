@@ -177,16 +177,16 @@ function Index() {
         </div>
       </section>
 
-      {/* O QUE VOCÊ VAI PODER COMER */}
+      {/* LO QUE VAS A PODER COMER */}
       <section className="py-20 bg-background border-t border-border/40 relative z-10 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate mb-4">
-            O que você <span className="text-brand-coral font-black">vai poder comer</span>
+            Lo que <span className="text-brand-coral font-black">vas a poder comer</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
-            Com ingredientes <span className="font-bold text-chocolate">acessíveis</span> e + de 300
-            receitas simples, qualquer pessoa pode preparar sobremesas deliciosas{" "}
-            <span className="font-bold text-chocolate">sem sair da dieta.</span>
+            Con ingredientes <span className="font-bold text-chocolate">accesibles</span> y + de 300
+            recetas simples, cualquier persona puede preparar postres deliciosos{" "}
+            <span className="font-bold text-chocolate">sin salir de la dieta.</span>
           </p>
           <div className="flex overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-5 gap-4 md:gap-6 snap-x snap-mandatory hide-scrollbar">
             {DESSERTS.map((d) => (
@@ -201,7 +201,7 @@ function Index() {
                 <div className="p-4 text-center">
                   <h3 className="text-white font-black text-xl mb-3">{d.name}</h3>
                   <div className="space-y-1">
-                    {["Sem Açúcar", "Sem Lactose", "Sem Glúten"].map((t) => (
+                    {["Sin Azúcar", "Sin Lactosa", "Sin Gluten"].map((t) => (
                       <p
                         key={t}
                         className="text-white/90 text-sm font-medium bg-white/10 rounded-full py-0.5"
@@ -210,7 +210,7 @@ function Index() {
                       </p>
                     ))}
                     <p className="text-gold text-sm font-bold bg-black/10 rounded-full py-0.5 mt-2">
-                      Sabor do Original
+                      Sabor del Original
                     </p>
                   </div>
                 </div>
@@ -220,27 +220,27 @@ function Index() {
         </div>
       </section>
 
-      {/* DEPOIMENTOS */}
+      {/* TESTIMONIOS */}
       <section className="py-14 bg-background border-t border-border/40 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center px-4 mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate mb-2">
-            O que estão <span className="text-brand-coral font-black">falando</span>
+            Lo que están <span className="text-brand-coral font-black">diciendo</span>
           </h2>
           <p className="text-base text-muted-foreground">
-            Resultados reais de quem já comprou o ebook
+            Resultados reales de quienes ya compraron el ebook
           </p>
         </div>
         <TestimonialsMarquee />
       </section>
 
-      {/* 300 RECEITAS */}
+      {/* 300 RECETAS */}
       <section className="py-20 bg-brand-peach border-y border-border/50">
         <div className="max-w-6xl mx-auto text-center px-4 mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-chocolate mb-4">
-            Sim! São mais de <span className="text-brand-coral font-black">300 receitas!</span>
+            ¡Sí! Son más de <span className="text-brand-coral font-black">300 recetas</span>
           </h2>
           <p className="text-lg md:text-xl text-chocolate/80 font-medium">
-            Zero Açúcar, Zero Glúten e Zero Lactose com o sabor das tradicionais!
+            ¡Sin azúcar, sin gluten y sin lactosa, con el sabor de las tradicionales!
           </p>
         </div>
         <RecipesMarquee />
