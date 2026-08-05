@@ -77,17 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "300 Receitas de Sobremesas Zero" },
+      { title: "300 Recetas de Postres Zero" },
       {
         name: "description",
         content:
-          "+ de 300 sobremesas zero açúcar, glúten e lactose por Amanda Ballis. Coma sua sobremesa favorita de domingo a domingo, sem culpa.",
+          "+ de 300 postres sin azúcar, sin gluten y sin lactosa por Amanda Ballis. Come tu postre favorito de domingo a domingo, sin culpa.",
       },
       { name: "author", content: "Amanda Ballis" },
-      { property: "og:title", content: "300 Receitas de Sobremesas Zero" },
+      { property: "og:title", content: "300 Recetas de Postres Zero" },
       {
         property: "og:description",
-        content: "+ de 300 sobremesas zero açúcar, glúten e lactose. Sem culpa.",
+        content: "+ de 300 postres sin azúcar, sin gluten y sin lactosa. Sin culpa.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

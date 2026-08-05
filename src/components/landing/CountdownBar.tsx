@@ -34,10 +34,10 @@ export function CountdownBar() {
   return (
     <div className="bg-urgency-red text-gold py-1.5 px-4 text-center fixed top-0 inset-x-0 z-50 shadow-md">
       <p className="text-[11px] md:text-xs font-bold tracking-wide">
-        Desconto Apenas HOJE: <span className="text-white">{today}</span>
+        Descuento Solo HOY: <span className="text-white">{today}</span>
       </p>
       <p className="text-[10px] md:text-[11px] font-medium mt-0.5">
-        Encerra em:{" "}
+        Termina en:{" "}
         <span className="font-bold font-mono tracking-wider text-white inline-block ml-1">
           {left === null ? "--" : `${h}h ${String(m).padStart(2, "0")}m ${String(s).padStart(2, "0")}s`}
         </span>

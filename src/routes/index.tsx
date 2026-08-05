@@ -8,17 +8,17 @@ import heroMockup from "@/assets/hero-mockup.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "300 Receitas de Sobremesas Zero | Amanda Ballis" },
+      { title: "300 Recetas de Postres Zero | Amanda Ballis" },
       {
         name: "description",
         content:
-          "+ de 300 sobremesas zero açúcar, glúten e lactose. Coma sua sobremesa favorita de domingo a domingo, sem culpa. Oferta de hoje: R$ 10.",
+          "+ de 300 postres sin azúcar, sin gluten y sin lactosa. Come tu postre favorito de domingo a domingo, sin culpa. Oferta de hoy: $12,89.",
       },
-      { property: "og:title", content: "300 Receitas de Sobremesas Zero | Amanda Ballis" },
+      { property: "og:title", content: "300 Recetas de Postres Zero | Amanda Ballis" },
       {
         property: "og:description",
         content:
-          "+ de 300 sobremesas zero açúcar, glúten e lactose, com o sabor das tradicionais. 3 bônus grátis e 7 dias de garantia.",
+          "+ de 300 postres sin azúcar, sin gluten y sin lactosa, con el sabor de los tradicionales. 3 bonos gratis y 7 días de garantía.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,62 +29,62 @@ export const Route = createFileRoute("/")({
 
 const DESSERTS = [
   { name: "Brownie", img: "/img/brownie.jpg" },
-  { name: "Manjar", img: "/img/manjar.jpg" },
-  { name: "Doce de Leite", img: "/img/doce.jpg" },
-  { name: "Pavê", img: "/img/pave.jpg" },
-  { name: "Pudim", img: "/img/pudim.jpg" },
+  { name: "Manjar Blanco", img: "/img/manjar.jpg" },
+  { name: "Dulce de Leche", img: "/img/doce.jpg" },
+  { name: "Postre de Galleta", img: "/img/pave.jpg" },
+  { name: "Flan", img: "/img/pudim.jpg" },
 ];
 
 const BONUSES = [
   {
-    title: "Tortas Doces",
-    desc: "Zero açúcar, zero glúten e zero lactose",
-    price: "DE R$ 39,90",
+    title: "Tartas Dulces",
+    desc: "Sin azúcar, sin gluten y sin lactosa",
+    price: "DE $39,90",
     img: "/img/bonus-tortas.png",
   },
   {
-    title: "Lanche da Tarde",
-    desc: "Zero açúcar, zero glúten e zero lactose",
-    price: "DE R$ 29,90",
+    title: "Merienda de la Tarde",
+    desc: "Sin azúcar, sin gluten y sin lactosa",
+    price: "DE $29,90",
     img: "/img/bonus-lanche.png",
   },
   {
-    title: "Geléias Caseiras",
-    desc: "Zero açúcar",
-    price: "DE R$ 19,90",
+    title: "Mermeladas Caseras",
+    desc: "Sin azúcar",
+    price: "DE $19,90",
     img: "/img/bonus-geleias.png",
   },
 ];
 
 const INCLUDED = [
-  "+300 RECEITAS DE SOBREMESAS ZERO",
-  "TORTAS DOCES (BÔNUS)",
-  "LANCHE DA TARDE (BÔNUS)",
-  "GELEIAS CASEIRAS (BÔNUS)",
-  "ACESSO IMEDIATO E VITALÍCIO",
-  "7 DIAS DE GARANTIA",
+  "+300 RECETAS DE POSTRES ZERO",
+  "TARTAS DULCES (BONO)",
+  "MERIENDA DE LA TARDE (BONO)",
+  "MERMELADAS CASERAS (BONO)",
+  "ACCESO INMEDIATO Y DE POR VIDA",
+  "7 DÍAS DE GARANTÍA",
 ];
 
 const FAQ = [
   {
-    q: "Funciona para quem tem diabetes?",
-    a: "Sim! Todas as receitas são sem açúcar, sem glúten e sem lactose, ideais para controlar a glicemia.",
+    q: "¿Funciona para quien tiene diabetes?",
+    a: "¡Sí! Todas las recetas son sin azúcar, sin gluten y sin lactosa, ideales para controlar la glucemia.",
   },
   {
-    q: "Os ingredientes são difíceis de encontrar?",
-    a: "Não. Ingredientes simples que você encontra em qualquer supermercado.",
+    q: "¿Los ingredientes son difíciles de encontrar?",
+    a: "No. Son ingredientes simples que encuentras en cualquier supermercado.",
   },
   {
-    q: "Precisa ter experiência na cozinha?",
-    a: "De jeito nenhum. Receitas muito fáceis, qualquer pessoa consegue fazer.",
+    q: "¿Necesito experiencia en la cocina?",
+    a: "Para nada. Son recetas muy fáciles, cualquier persona puede hacerlas.",
   },
   {
-    q: "Como acesso depois de pagar?",
-    a: "Acesso imediato por e-mail, vitalício, em qualquer dispositivo.",
+    q: "¿Cómo accedo después de pagar?",
+    a: "Acceso inmediato por correo electrónico, de por vida y en cualquier dispositivo.",
   },
   {
-    q: "E se eu não gostar?",
-    a: "7 dias de garantia total — devolvemos 100% do seu dinheiro sem perguntas.",
+    q: "¿Y si no me gusta?",
+    a: "7 días de garantía total: te devolvemos el 100% de tu dinero sin preguntas.",
   },
 ];
 
@@ -113,19 +113,19 @@ function Index() {
           <div className="flex flex-col items-center text-center space-y-1.5 mb-5">
             <h1 className="flex flex-col items-center">
               <span className="bg-chocolate text-white px-2 sm:px-2.5 py-0.5 text-[clamp(0.85rem,5.2vw,1.375rem)] font-black uppercase shadow-lg whitespace-nowrap">
-                Agora Você Pode Comer
+                Ahora Puedes Comer
               </span>
               <span className="bg-brand-coral text-white px-2 sm:px-3 py-0.5 text-[clamp(0.85rem,5.6vw,1.625rem)] font-black uppercase transform rotate-[0.4deg] shadow-lg mt-[1px] whitespace-nowrap">
-                Sua Sobremesa Favorita
+                Tu Postre Favorito
               </span>
               <span className="text-brand-coral text-2xl md:text-2xl lg:text-3xl font-black uppercase tracking-tight mt-2 drop-shadow-sm flex flex-col items-center">
                 <span className="whitespace-nowrap">De Domingo a Domingo,</span>
-                <span>Sem Culpa!</span>
+                <span>¡Sin Culpa!</span>
               </span>
             </h1>
             <p className="text-sm md:text-base text-muted-foreground max-w-2xl mt-3 font-medium">
-              + de 300 Sobremesas{" "}
-              <span className="font-bold text-chocolate">Zero Açúcar, Glúten e Lactose.</span>
+              + de 300 Postres{" "}
+              <span className="font-bold text-chocolate">Sin Azúcar, Sin Gluten y Sin Lactosa.</span>
             </p>
             <div className="flex items-center gap-1 mt-3">
               <div
@@ -145,7 +145,7 @@ function Index() {
 
           <div className="mt-4 mb-4 md:mb-6">
             <img
-              alt="300 Receitas de Sobremesas Zero"
+              alt="300 Recetas de Postres Zero"
               className="w-full max-w-2xl mx-auto drop-shadow-2xl"
               src={heroMockup.url}
             />
@@ -153,7 +153,7 @@ function Index() {
 
           <div className="max-w-[180px] mx-auto mt-14 mb-6">
             <p className="text-[8px] font-bold text-muted-foreground uppercase tracking-widest mb-0.5">
-              Avaliações:
+              Valoraciones:
             </p>
             <div className="flex items-center gap-1 mb-1">
               <div className="flex gap-0.5">
@@ -177,16 +177,16 @@ function Index() {
         </div>
       </section>
 
-      {/* O QUE VOCÊ VAI PODER COMER */}
+      {/* LO QUE VAS A PODER COMER */}
       <section className="py-20 bg-background border-t border-border/40 relative z-10 px-4 md:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate mb-4">
-            O que você <span className="text-brand-coral font-black">vai poder comer</span>
+            Lo que <span className="text-brand-coral font-black">vas a poder comer</span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-3xl mx-auto mb-12">
-            Com ingredientes <span className="font-bold text-chocolate">acessíveis</span> e + de 300
-            receitas simples, qualquer pessoa pode preparar sobremesas deliciosas{" "}
-            <span className="font-bold text-chocolate">sem sair da dieta.</span>
+            Con ingredientes <span className="font-bold text-chocolate">accesibles</span> y + de 300
+            recetas simples, cualquier persona puede preparar postres deliciosos{" "}
+            <span className="font-bold text-chocolate">sin salir de la dieta.</span>
           </p>
           <div className="flex overflow-x-auto pb-8 -mx-4 px-4 md:mx-0 md:px-0 md:grid md:grid-cols-5 gap-4 md:gap-6 snap-x snap-mandatory hide-scrollbar">
             {DESSERTS.map((d) => (
@@ -201,7 +201,7 @@ function Index() {
                 <div className="p-4 text-center">
                   <h3 className="text-white font-black text-xl mb-3">{d.name}</h3>
                   <div className="space-y-1">
-                    {["Sem Açúcar", "Sem Lactose", "Sem Glúten"].map((t) => (
+                    {["Sin Azúcar", "Sin Lactosa", "Sin Gluten"].map((t) => (
                       <p
                         key={t}
                         className="text-white/90 text-sm font-medium bg-white/10 rounded-full py-0.5"
@@ -210,7 +210,7 @@ function Index() {
                       </p>
                     ))}
                     <p className="text-gold text-sm font-bold bg-black/10 rounded-full py-0.5 mt-2">
-                      Sabor do Original
+                      Sabor del Original
                     </p>
                   </div>
                 </div>
@@ -220,76 +220,76 @@ function Index() {
         </div>
       </section>
 
-      {/* DEPOIMENTOS */}
+      {/* TESTIMONIOS */}
       <section className="py-14 bg-background border-t border-border/40 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center px-4 mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate mb-2">
-            O que estão <span className="text-brand-coral font-black">falando</span>
+            Lo que están <span className="text-brand-coral font-black">diciendo</span>
           </h2>
           <p className="text-base text-muted-foreground">
-            Resultados reais de quem já comprou o ebook
+            Resultados reales de quienes ya compraron el ebook
           </p>
         </div>
         <TestimonialsMarquee />
       </section>
 
-      {/* 300 RECEITAS */}
+      {/* 300 RECETAS */}
       <section className="py-20 bg-brand-peach border-y border-border/50">
         <div className="max-w-6xl mx-auto text-center px-4 mb-10">
           <h2 className="text-3xl md:text-5xl font-bold text-chocolate mb-4">
-            Sim! São mais de <span className="text-brand-coral font-black">300 receitas!</span>
+            ¡Sí! Son más de <span className="text-brand-coral font-black">300 recetas</span>
           </h2>
           <p className="text-lg md:text-xl text-chocolate/80 font-medium">
-            Zero Açúcar, Zero Glúten e Zero Lactose com o sabor das tradicionais!
+            ¡Sin azúcar, sin gluten y sin lactosa, con el sabor de las tradicionales!
           </p>
         </div>
         <RecipesMarquee />
       </section>
 
-      {/* BENEFÍCIOS */}
+      {/* BENEFICIOS */}
       <section className="py-10 md:py-24 bg-background px-4">
         <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-2xl md:rounded-3xl shadow-xl shadow-brand-coral/5 border border-brand-coral/20 p-4 md:p-10 transform hover:shadow-2xl transition-shadow duration-500">
             <h2 className="text-lg md:text-3xl font-black text-brand-coral text-center mb-4 md:mb-8">
-              Baixando agora mais de 300 receitas, você vai:
+              Descargando ahora más de 300 recetas, vas a:
             </h2>
             <ul className="space-y-2.5 md:space-y-5 mb-5 md:mb-10">
               <Benefit>
-                Controlar a <span className="font-bold text-chocolate">compulsão por açúcar</span>
+                Controlar la <span className="font-bold text-chocolate">ansiedad por el azúcar</span>
               </Benefit>
               <Benefit>
-                <span className="font-bold text-chocolate">Controlar sua glicemia</span> sem abrir
-                mão do prazer de comer doces.
+                <span className="font-bold text-chocolate">Controlar tu glucemia</span> sin renunciar
+                al placer de comer dulces.
               </Benefit>
               <Benefit>
-                Garantir{" "}
-                <span className="font-bold text-chocolate">digestão leve e confortável</span> após
-                comer sua sobremesa
+                Tener una{" "}
+                <span className="font-bold text-chocolate">digestión ligera y cómoda</span> después
+                de comer tu postre
               </Benefit>
               <Benefit>
-                <span className="font-bold text-chocolate">Perder peso</span> comendo seus doces
-                favoritos na versão fit, com o mesmo sabor dos tradicionais
+                <span className="font-bold text-chocolate">Bajar de peso</span> comiendo tus dulces
+                favoritos en versión fit, con el mismo sabor de los tradicionales
               </Benefit>
               <Benefit>
                 <span className="font-bold text-chocolate">
-                  Manter uma rotina de alimentação saudável
+                  Mantener una rutina de alimentación saludable
                 </span>{" "}
-                mesmo quando quiser comer um docinho
+                incluso cuando quieras comer algo dulce
               </Benefit>
               <Benefit>
-                Garantir que <span className="font-bold text-chocolate">seu filho</span> tenha uma{" "}
-                <span className="font-bold text-chocolate">alimentação equilibrada</span> enquanto
-                curte os sabores da infância
+                Lograr que <span className="font-bold text-chocolate">tu hijo</span> tenga una{" "}
+                <span className="font-bold text-chocolate">alimentación equilibrada</span> mientras
+                disfruta los sabores de la infancia
               </Benefit>
               <Benefit>
-                Ter <span className="font-bold text-chocolate">sabores inéditos e saudáveis</span>{" "}
-                para experimentar por anos
+                Tener <span className="font-bold text-chocolate">sabores nuevos y saludables</span>{" "}
+                para probar durante años
               </Benefit>
               <Benefit>
-                Não tem muita{" "}
-                <span className="font-bold text-chocolate">experiência na cozinha</span>. São
-                receitas MUITO fáceis de fazer, com ingredientes que{" "}
-                <span className="font-bold text-chocolate">todo mundo tem em casa</span>!
+                ¿No tienes mucha{" "}
+                <span className="font-bold text-chocolate">experiencia en la cocina</span>? Son
+                recetas MUY fáciles de hacer, con ingredientes que{" "}
+                <span className="font-bold text-chocolate">todos tienen en casa</span>.
               </Benefit>
             </ul>
             <div className="flex justify-center">
@@ -299,13 +299,13 @@ function Index() {
         </div>
       </section>
 
-      {/* BÔNUS */}
+      {/* BONOS */}
       <section className="py-10 md:py-16 px-4 gradient-peach">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-medium text-chocolate/50 mb-8 md:mb-10 leading-snug">
-            Você ainda{" "}
+            Además{" "}
             <span className="font-black italic text-brand-coral">
-              ganha + 3 bônus de presente!
+              ¡te llevas 3 bonos de regalo!
             </span>
           </h2>
           <div className="flex flex-col md:grid md:grid-cols-3 gap-5">
@@ -323,7 +323,7 @@ function Index() {
                   <p className="font-bold text-lg leading-tight mb-1">{b.title}</p>
                   <p className="text-sm opacity-90 leading-snug mb-4">{b.desc}</p>
                   <p className="line-through text-lg opacity-80 font-semibold mb-1">{b.price}</p>
-                  <p className="font-black text-4xl tracking-wide">GRÁTIS</p>
+                  <p className="font-black text-4xl tracking-wide">GRATIS</p>
                 </div>
               </div>
             ))}
@@ -335,15 +335,15 @@ function Index() {
       <section id="oferta" className="py-10 px-4 gradient-peach">
         <div className="max-w-md mx-auto">
           <h2 className="text-center text-2xl font-medium text-chocolate/60 mb-6 leading-snug">
-            Tudo o que você <span className="font-black text-brand-coral">receberá</span>,
-            aproveitando a <span className="font-black text-brand-coral">oferta de hoje</span>
+            Todo lo que <span className="font-black text-brand-coral">recibirás</span>,
+            aprovechando la <span className="font-black text-brand-coral">oferta de hoy</span>
           </h2>
           <div className="bg-[#ebebeb] rounded-2xl border-2 border-cta-green shadow-xl p-5">
             <div className="mb-6 text-center">
-              <p className="text-gray-400 line-through text-2xl font-semibold">DE R$ 97,00</p>
+              <p className="text-gray-400 line-through text-2xl font-semibold">DE $97,00</p>
               <p className="text-chocolate font-black mt-1 flex items-baseline justify-center gap-2">
                 <span className="text-xl font-semibold">POR</span>
-                <span className="text-5xl">R$ 10</span>
+                <span className="text-5xl">$12,89</span>
               </p>
             </div>
             <ul className="text-left space-y-3 mb-6">
@@ -361,7 +361,7 @@ function Index() {
             </ul>
             <CtaButton full />
             <p className="text-xs text-muted-foreground uppercase tracking-widest mt-3 text-center font-semibold">
-              Somente Hoje *
+              Solo Hoy *
             </p>
           </div>
         </div>
@@ -371,7 +371,7 @@ function Index() {
       <section className="py-8 px-4 bg-background">
         <div className="max-w-xl mx-auto">
           <h2 className="text-xs font-bold text-chocolate/60 text-center mb-3 uppercase tracking-widest">
-            Dúvidas frequentes
+            Preguntas frecuentes
           </h2>
           <div className="space-y-1.5">
             {FAQ.map((f) => (
