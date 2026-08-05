@@ -1,7 +1,13 @@
-import provaSocial02 from "@/assets/prova-social-02.png.asset.json";
+import provaSocial01 from "@/assets/prova-social-01-2.png.asset.json";
+import provaSocial02 from "@/assets/prova-social-02-2.png.asset.json";
 import provaSocial03 from "@/assets/prova-social-03.png.asset.json";
 import provaSocial04 from "@/assets/prova-social-04.png.asset.json";
 import provaSocial05 from "@/assets/prova-social-05.png.asset.json";
+import provaSocial06 from "@/assets/prova-social-06.png.asset.json";
+import provaSocial07 from "@/assets/prova-social-07.png.asset.json";
+import provaSocial08 from "@/assets/prova-social-08.png.asset.json";
+import provaSocial09 from "@/assets/prova-social-09.png.asset.json";
+import provaSocial10 from "@/assets/prova-social-10.png.asset.json";
 
 const ROW_A = [
   "/img/cheesecake.jpg",
