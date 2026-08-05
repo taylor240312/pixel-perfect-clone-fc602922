@@ -246,50 +246,50 @@ function Index() {
         <RecipesMarquee />
       </section>
 
-      {/* BENEFÍCIOS */}
+      {/* BENEFICIOS */}
       <section className="py-10 md:py-24 bg-background px-4">
         <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-2xl md:rounded-3xl shadow-xl shadow-brand-coral/5 border border-brand-coral/20 p-4 md:p-10 transform hover:shadow-2xl transition-shadow duration-500">
             <h2 className="text-lg md:text-3xl font-black text-brand-coral text-center mb-4 md:mb-8">
-              Baixando agora mais de 300 receitas, você vai:
+              Descargando ahora más de 300 recetas, vas a:
             </h2>
             <ul className="space-y-2.5 md:space-y-5 mb-5 md:mb-10">
               <Benefit>
-                Controlar a <span className="font-bold text-chocolate">compulsão por açúcar</span>
+                Controlar la <span className="font-bold text-chocolate">ansiedad por el azúcar</span>
               </Benefit>
               <Benefit>
-                <span className="font-bold text-chocolate">Controlar sua glicemia</span> sem abrir
-                mão do prazer de comer doces.
+                <span className="font-bold text-chocolate">Controlar tu glucemia</span> sin renunciar
+                al placer de comer dulces.
               </Benefit>
               <Benefit>
-                Garantir{" "}
-                <span className="font-bold text-chocolate">digestão leve e confortável</span> após
-                comer sua sobremesa
+                Tener una{" "}
+                <span className="font-bold text-chocolate">digestión ligera y cómoda</span> después
+                de comer tu postre
               </Benefit>
               <Benefit>
-                <span className="font-bold text-chocolate">Perder peso</span> comendo seus doces
-                favoritos na versão fit, com o mesmo sabor dos tradicionais
+                <span className="font-bold text-chocolate">Bajar de peso</span> comiendo tus dulces
+                favoritos en versión fit, con el mismo sabor de los tradicionales
               </Benefit>
               <Benefit>
                 <span className="font-bold text-chocolate">
-                  Manter uma rotina de alimentação saudável
+                  Mantener una rutina de alimentación saludable
                 </span>{" "}
-                mesmo quando quiser comer um docinho
+                incluso cuando quieras comer algo dulce
               </Benefit>
               <Benefit>
-                Garantir que <span className="font-bold text-chocolate">seu filho</span> tenha uma{" "}
-                <span className="font-bold text-chocolate">alimentação equilibrada</span> enquanto
-                curte os sabores da infância
+                Lograr que <span className="font-bold text-chocolate">tu hijo</span> tenga una{" "}
+                <span className="font-bold text-chocolate">alimentación equilibrada</span> mientras
+                disfruta los sabores de la infancia
               </Benefit>
               <Benefit>
-                Ter <span className="font-bold text-chocolate">sabores inéditos e saudáveis</span>{" "}
-                para experimentar por anos
+                Tener <span className="font-bold text-chocolate">sabores nuevos y saludables</span>{" "}
+                para probar durante años
               </Benefit>
               <Benefit>
-                Não tem muita{" "}
-                <span className="font-bold text-chocolate">experiência na cozinha</span>. São
-                receitas MUITO fáceis de fazer, com ingredientes que{" "}
-                <span className="font-bold text-chocolate">todo mundo tem em casa</span>!
+                ¿No tienes mucha{" "}
+                <span className="font-bold text-chocolate">experiencia en la cocina</span>? Son
+                recetas MUY fáciles de hacer, con ingredientes que{" "}
+                <span className="font-bold text-chocolate">todos tienen en casa</span>.
               </Benefit>
             </ul>
             <div className="flex justify-center">
