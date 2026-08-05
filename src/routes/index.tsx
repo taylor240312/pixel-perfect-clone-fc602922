@@ -335,15 +335,15 @@ function Index() {
       <section id="oferta" className="py-10 px-4 gradient-peach">
         <div className="max-w-md mx-auto">
           <h2 className="text-center text-2xl font-medium text-chocolate/60 mb-6 leading-snug">
-            Tudo o que você <span className="font-black text-brand-coral">receberá</span>,
-            aproveitando a <span className="font-black text-brand-coral">oferta de hoje</span>
+            Todo lo que <span className="font-black text-brand-coral">recibirás</span>,
+            aprovechando la <span className="font-black text-brand-coral">oferta de hoy</span>
           </h2>
           <div className="bg-[#ebebeb] rounded-2xl border-2 border-cta-green shadow-xl p-5">
             <div className="mb-6 text-center">
-              <p className="text-gray-400 line-through text-2xl font-semibold">DE R$ 97,00</p>
+              <p className="text-gray-400 line-through text-2xl font-semibold">DE $97,00</p>
               <p className="text-chocolate font-black mt-1 flex items-baseline justify-center gap-2">
                 <span className="text-xl font-semibold">POR</span>
-                <span className="text-5xl">R$ 10</span>
+                <span className="text-5xl">$12,89</span>
               </p>
             </div>
             <ul className="text-left space-y-3 mb-6">
