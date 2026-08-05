@@ -113,19 +113,19 @@ function Index() {
           <div className="flex flex-col items-center text-center space-y-1.5 mb-5">
             <h1 className="flex flex-col items-center">
               <span className="bg-chocolate text-white px-2 sm:px-2.5 py-0.5 text-[clamp(0.85rem,5.2vw,1.375rem)] font-black uppercase shadow-lg whitespace-nowrap">
-                Agora Você Pode Comer
+                Ahora Puedes Comer
               </span>
               <span className="bg-brand-coral text-white px-2 sm:px-3 py-0.5 text-[clamp(0.85rem,5.6vw,1.625rem)] font-black uppercase transform rotate-[0.4deg] shadow-lg mt-[1px] whitespace-nowrap">
-                Sua Sobremesa Favorita
+                Tu Postre Favorito
               </span>
               <span className="text-brand-coral text-2xl md:text-2xl lg:text-3xl font-black uppercase tracking-tight mt-2 drop-shadow-sm flex flex-col items-center">
                 <span className="whitespace-nowrap">De Domingo a Domingo,</span>
-                <span>Sem Culpa!</span>
+                <span>¡Sin Culpa!</span>
               </span>
             </h1>
             <p className="text-sm md:text-base text-muted-foreground max-w-2xl mt-3 font-medium">
-              + de 300 Sobremesas{" "}
-              <span className="font-bold text-chocolate">Zero Açúcar, Glúten e Lactose.</span>
+              + de 300 Postres{" "}
+              <span className="font-bold text-chocolate">Sin Azúcar, Sin Gluten y Sin Lactosa.</span>
             </p>
             <div className="flex items-center gap-1 mt-3">
               <div
@@ -145,7 +145,7 @@ function Index() {
 
           <div className="mt-4 mb-4 md:mb-6">
             <img
-              alt="300 Receitas de Sobremesas Zero"
+              alt="300 Recetas de Postres Zero"
               className="w-full max-w-2xl mx-auto drop-shadow-2xl"
               src={heroMockup.url}
             />
@@ -153,7 +153,7 @@ function Index() {
 
           <div className="max-w-[180px] mx-auto mt-14 mb-6">
             <p className="text-[8px] font-bold text-muted-foreground uppercase tracking-widest mb-0.5">
-              Avaliações:
+              Valoraciones:
             </p>
             <div className="flex items-center gap-1 mb-1">
               <div className="flex gap-0.5">
