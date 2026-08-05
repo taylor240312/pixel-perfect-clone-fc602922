@@ -26,7 +26,7 @@ export function CtaButton({
         textShadow: "rgba(0, 0, 0, 0.2) 0px 1px 2px",
       }}
     >
-      Quero Aproveitar o Desconto
+      Quiero Aprovechar el Descuento
     </button>
   );
 }
