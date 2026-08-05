@@ -361,7 +361,7 @@ function Index() {
             </ul>
             <CtaButton full />
             <p className="text-xs text-muted-foreground uppercase tracking-widest mt-3 text-center font-semibold">
-              Somente Hoje *
+              Solo Hoy *
             </p>
           </div>
         </div>
