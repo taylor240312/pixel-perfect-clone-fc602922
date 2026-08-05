@@ -1,4 +1,5 @@
 import provaSocial02 from "@/assets/prova-social-02.png.asset.json";
+import provaSocial03 from "@/assets/prova-social-03.png.asset.json";
 
 const ROW_A = [
   "/img/cheesecake.jpg",
