@@ -53,13 +53,13 @@ export function RecipesMarquee() {
   );
 }
 
-const DEPS_A = ["01", "02", "03", "04", "05"];
-const DEPS_B = ["06", "07", "08", "09", "10"];
+const DEPS_A = ["/img/dep-01.png", "/img/dep-02.png", "/img/dep-03.png", "/img/dep-04.png", "/img/dep-05.png"];
+const DEPS_B = [provaSocial01.url, "/img/dep-07.png", "/img/dep-08.png", "/img/dep-09.png", "/img/dep-10.png"];
 
-function DepCard({ n }: { n: string }) {
+function DepCard({ src }: { src: string }) {
   return (
     <div className="flex-shrink-0 w-44 rounded-2xl overflow-hidden shadow-lg border border-border/30">
-      <img alt="Depoimento" className="w-full object-cover" src={`/img/dep-${n}.png`} loading="lazy" />
+      <img alt="Depoimento" className="w-full object-cover" src={src} loading="lazy" />
     </div>
   );
 }
