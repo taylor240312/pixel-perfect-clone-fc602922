@@ -54,7 +54,7 @@ export function RecipesMarquee() {
   );
 }
 
-const DEPS_A = ["/img/dep-01.png", "/img/dep-02.png", "/img/dep-03.png", "/img/dep-04.png", "/img/dep-05.png"];
+const DEPS_A = ["/img/dep-01.png", "/img/dep-02.png", provaSocial03.url, "/img/dep-04.png", "/img/dep-05.png"];
 const DEPS_B = [provaSocial02.url, "/img/dep-07.png", "/img/dep-08.png", "/img/dep-09.png", "/img/dep-10.png"];
 
 function DepCard({ src }: { src: string }) {
