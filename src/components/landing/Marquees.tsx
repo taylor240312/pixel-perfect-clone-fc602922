@@ -68,7 +68,7 @@ const DEPS_B = [provaSocial06.url, provaSocial07.url, provaSocial08.url, provaSo
 function DepCard({ src }: { src: string }) {
   return (
     <div className="flex-shrink-0 w-44 rounded-2xl overflow-hidden shadow-lg border border-border/30">
-      <img alt="Depoimento" className="w-full object-cover" src={src} loading="lazy" />
+      <img alt="Testimonio" className="w-full object-cover" src={src} loading="lazy" />
     </div>
   );
 }
