@@ -69,15 +69,15 @@ export function TestimonialsMarquee() {
     <>
       <div className="flex overflow-hidden mb-4">
         <div className="flex gap-3 animate-marquee" style={{ width: "max-content" }}>
-          {[...DEPS_A, ...DEPS_A].map((n, i) => (
-            <DepCard key={`ta-${i}`} n={n} />
+          {[...DEPS_A, ...DEPS_A].map((src, i) => (
+            <DepCard key={`ta-${i}`} src={src} />
           ))}
         </div>
       </div>
       <div className="flex overflow-hidden">
         <div className="flex gap-3 animate-marquee-reverse" style={{ width: "max-content" }}>
-          {[...DEPS_B, ...DEPS_B].map((n, i) => (
-            <DepCard key={`tb-${i}`} n={n} />
+          {[...DEPS_B, ...DEPS_B].map((src, i) => (
+            <DepCard key={`tb-${i}`} src={src} />
           ))}
         </div>
       </div>
