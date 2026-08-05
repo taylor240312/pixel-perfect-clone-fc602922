@@ -299,13 +299,13 @@ function Index() {
         </div>
       </section>
 
-      {/* BÔNUS */}
+      {/* BONOS */}
       <section className="py-10 md:py-16 px-4 gradient-peach">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-center text-2xl md:text-3xl font-medium text-chocolate/50 mb-8 md:mb-10 leading-snug">
-            Você ainda{" "}
+            Además{" "}
             <span className="font-black italic text-brand-coral">
-              ganha + 3 bônus de presente!
+              ¡te llevas 3 bonos de regalo!
             </span>
           </h2>
           <div className="flex flex-col md:grid md:grid-cols-3 gap-5">
