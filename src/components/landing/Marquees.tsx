@@ -62,8 +62,8 @@ export function RecipesMarquee() {
   );
 }
 
-const DEPS_A = ["/img/dep-01.png", "/img/dep-02.png", provaSocial03.url, provaSocial04.url, provaSocial05.url];
-const DEPS_B = [provaSocial02.url, "/img/dep-07.png", "/img/dep-08.png", "/img/dep-09.png", "/img/dep-10.png"];
+const DEPS_A = [provaSocial01.url, provaSocial02.url, provaSocial03.url, provaSocial04.url, provaSocial05.url];
+const DEPS_B = [provaSocial06.url, provaSocial07.url, provaSocial08.url, provaSocial09.url, provaSocial10.url];
 
 function DepCard({ src }: { src: string }) {
   return (
