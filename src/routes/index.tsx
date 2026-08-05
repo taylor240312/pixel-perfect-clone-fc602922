@@ -371,7 +371,7 @@ function Index() {
       <section className="py-8 px-4 bg-background">
         <div className="max-w-xl mx-auto">
           <h2 className="text-xs font-bold text-chocolate/60 text-center mb-3 uppercase tracking-widest">
-            Dúvidas frequentes
+            Preguntas frecuentes
           </h2>
           <div className="space-y-1.5">
             {FAQ.map((f) => (
