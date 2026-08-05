@@ -323,7 +323,7 @@ function Index() {
                   <p className="font-bold text-lg leading-tight mb-1">{b.title}</p>
                   <p className="text-sm opacity-90 leading-snug mb-4">{b.desc}</p>
                   <p className="line-through text-lg opacity-80 font-semibold mb-1">{b.price}</p>
-                  <p className="font-black text-4xl tracking-wide">GRÁTIS</p>
+                  <p className="font-black text-4xl tracking-wide">GRATIS</p>
                 </div>
               </div>
             ))}
