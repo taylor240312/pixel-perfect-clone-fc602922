@@ -8,17 +8,17 @@ import heroMockup from "@/assets/hero-mockup.png.asset.json";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "300 Receitas de Sobremesas Zero | Amanda Ballis" },
+      { title: "300 Recetas de Postres Zero | Amanda Ballis" },
       {
         name: "description",
         content:
-          "+ de 300 sobremesas zero açúcar, glúten e lactose. Coma sua sobremesa favorita de domingo a domingo, sem culpa. Oferta de hoje: R$ 10.",
+          "+ de 300 postres sin azúcar, sin gluten y sin lactosa. Come tu postre favorito de domingo a domingo, sin culpa. Oferta de hoy: $12,89.",
       },
-      { property: "og:title", content: "300 Receitas de Sobremesas Zero | Amanda Ballis" },
+      { property: "og:title", content: "300 Recetas de Postres Zero | Amanda Ballis" },
       {
         property: "og:description",
         content:
-          "+ de 300 sobremesas zero açúcar, glúten e lactose, com o sabor das tradicionais. 3 bônus grátis e 7 dias de garantia.",
+          "+ de 300 postres sin azúcar, sin gluten y sin lactosa, con el sabor de los tradicionales. 3 bonos gratis y 7 días de garantía.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -29,62 +29,62 @@ export const Route = createFileRoute("/")({
 
 const DESSERTS = [
   { name: "Brownie", img: "/img/brownie.jpg" },
-  { name: "Manjar", img: "/img/manjar.jpg" },
-  { name: "Doce de Leite", img: "/img/doce.jpg" },
-  { name: "Pavê", img: "/img/pave.jpg" },
-  { name: "Pudim", img: "/img/pudim.jpg" },
+  { name: "Manjar Blanco", img: "/img/manjar.jpg" },
+  { name: "Dulce de Leche", img: "/img/doce.jpg" },
+  { name: "Postre de Galleta", img: "/img/pave.jpg" },
+  { name: "Flan", img: "/img/pudim.jpg" },
 ];
 
 const BONUSES = [
   {
-    title: "Tortas Doces",
-    desc: "Zero açúcar, zero glúten e zero lactose",
-    price: "DE R$ 39,90",
+    title: "Tartas Dulces",
+    desc: "Sin azúcar, sin gluten y sin lactosa",
+    price: "DE $39,90",
     img: "/img/bonus-tortas.png",
   },
   {
-    title: "Lanche da Tarde",
-    desc: "Zero açúcar, zero glúten e zero lactose",
-    price: "DE R$ 29,90",
+    title: "Merienda de la Tarde",
+    desc: "Sin azúcar, sin gluten y sin lactosa",
+    price: "DE $29,90",
     img: "/img/bonus-lanche.png",
   },
   {
-    title: "Geléias Caseiras",
-    desc: "Zero açúcar",
-    price: "DE R$ 19,90",
+    title: "Mermeladas Caseras",
+    desc: "Sin azúcar",
+    price: "DE $19,90",
     img: "/img/bonus-geleias.png",
   },
 ];
 
 const INCLUDED = [
-  "+300 RECEITAS DE SOBREMESAS ZERO",
-  "TORTAS DOCES (BÔNUS)",
-  "LANCHE DA TARDE (BÔNUS)",
-  "GELEIAS CASEIRAS (BÔNUS)",
-  "ACESSO IMEDIATO E VITALÍCIO",
-  "7 DIAS DE GARANTIA",
+  "+300 RECETAS DE POSTRES ZERO",
+  "TARTAS DULCES (BONO)",
+  "MERIENDA DE LA TARDE (BONO)",
+  "MERMELADAS CASERAS (BONO)",
+  "ACCESO INMEDIATO Y DE POR VIDA",
+  "7 DÍAS DE GARANTÍA",
 ];
 
 const FAQ = [
   {
-    q: "Funciona para quem tem diabetes?",
-    a: "Sim! Todas as receitas são sem açúcar, sem glúten e sem lactose, ideais para controlar a glicemia.",
+    q: "¿Funciona para quien tiene diabetes?",
+    a: "¡Sí! Todas las recetas son sin azúcar, sin gluten y sin lactosa, ideales para controlar la glucemia.",
   },
   {
-    q: "Os ingredientes são difíceis de encontrar?",
-    a: "Não. Ingredientes simples que você encontra em qualquer supermercado.",
+    q: "¿Los ingredientes son difíciles de encontrar?",
+    a: "No. Son ingredientes simples que encuentras en cualquier supermercado.",
   },
   {
-    q: "Precisa ter experiência na cozinha?",
-    a: "De jeito nenhum. Receitas muito fáceis, qualquer pessoa consegue fazer.",
+    q: "¿Necesito experiencia en la cocina?",
+    a: "Para nada. Son recetas muy fáciles, cualquier persona puede hacerlas.",
   },
   {
-    q: "Como acesso depois de pagar?",
-    a: "Acesso imediato por e-mail, vitalício, em qualquer dispositivo.",
+    q: "¿Cómo accedo después de pagar?",
+    a: "Acceso inmediato por correo electrónico, de por vida y en cualquier dispositivo.",
   },
   {
-    q: "E se eu não gostar?",
-    a: "7 dias de garantia total — devolvemos 100% do seu dinheiro sem perguntas.",
+    q: "¿Y si no me gusta?",
+    a: "7 días de garantía total: te devolvemos el 100% de tu dinero sin preguntas.",
   },
 ];
 
