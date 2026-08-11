@@ -5,30 +5,53 @@ const FADE_OUT_MS = 550;
 
 export function LoadingScreen() {
   const [mounted, setMounted] = useState(false);
+  const [entered, setEntered] = useState(false);
+  const [pageReady, setPageReady] = useState(false);
   const [visible, setVisible] = useState(true);
   const [fading, setFading] = useState(false);
 
+  // Mount and start the entry fade-in on the client side only
   useEffect(() => {
     setMounted(true);
 
-    const startAt = Date.now();
+    const entryTimer = window.setTimeout(() => {
+      setEntered(true);
+    }, 50);
 
-    const finish = () => {
-      const elapsed = Date.now() - startAt;
-      const remaining = Math.max(0, MIN_LOADING_MS - elapsed);
-
-      window.setTimeout(() => {
-        setFading(true);
-        window.setTimeout(() => setVisible(false), FADE_OUT_MS);
-      }, remaining);
+    return () => {
+      window.clearTimeout(entryTimer);
     };
+  }, []);
+
+  // Detect when the page has finished loading
+  useEffect(() => {
+    const onLoad = () => setPageReady(true);
 
     if (document.readyState === "complete") {
-      finish();
+      setPageReady(true);
     } else {
-      window.addEventListener("load", finish, { once: true });
+      window.addEventListener("load", onLoad, { once: true });
     }
+
+    return () => {
+      window.removeEventListener("load", onLoad);
+    };
   }, []);
+
+  // Once the screen has entered and the page is ready, hold it for the minimum
+  // duration and then fade out smoothly
+  useEffect(() => {
+    if (!mounted || !entered || !pageReady || fading) {
+      return;
+    }
+
+    const timer = window.setTimeout(() => {
+      setFading(true);
+      window.setTimeout(() => setVisible(false), FADE_OUT_MS);
+    }, MIN_LOADING_MS);
+
+    return () => window.clearTimeout(timer);
+  }, [mounted, entered, pageReady, fading]);
 
   if (!mounted || !visible) {
     return null;
@@ -41,8 +64,14 @@ export function LoadingScreen() {
         fixed inset-0 z-[9999]
         flex flex-col items-center justify-center
         overflow-hidden
-        transition-opacity duration-500 ease-out
-        ${fading ? "pointer-events-none opacity-0" : "opacity-100"}
+        transition-opacity ease-out
+        ${
+          fading
+            ? "pointer-events-none opacity-0 duration-[600ms]"
+            : entered
+              ? "opacity-100 duration-300"
+              : "opacity-0 duration-300"
+        }
       `}
       style={{
         background:
