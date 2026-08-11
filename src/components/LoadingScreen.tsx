@@ -4,6 +4,7 @@ const MIN_LOADING_MS = 1500;
 const FADE_OUT_MS = 500;
 
 export function LoadingScreen() {
+  console.log("[LoadingScreen] render");
   const [mounted, setMounted] = useState(false);
   const [visible, setVisible] = useState(true);
   const [fading, setFading] = useState(false);
