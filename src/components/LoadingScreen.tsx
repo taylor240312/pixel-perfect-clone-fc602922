@@ -5,7 +5,7 @@ const FADE_OUT_MS = 550;
 
 export function LoadingScreen() {
   const [visible, setVisible] = useState(true);
-  const [entered, setEntered] = useState(false);
+  const [entered, setEntered] = useState(true);
   const [fading, setFading] = useState(false);
 
   useEffect(() => {
