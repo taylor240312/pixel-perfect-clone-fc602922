@@ -5,17 +5,11 @@ const FADE_OUT_MS = 550;
 
 export function LoadingScreen() {
   const [mounted, setMounted] = useState(false);
-  const [entered, setEntered] = useState(false);
   const [visible, setVisible] = useState(true);
   const [fading, setFading] = useState(false);
 
   useEffect(() => {
-    // Mount on the client after a brief tick so the entry fade-in plays cleanly
-    const mountTimer = window.setTimeout(() => {
-      setMounted(true);
-      // Trigger the opacity transition on the next paint
-      window.requestAnimationFrame(() => setEntered(true));
-    }, 30);
+    setMounted(true);
 
     const startAt = Date.now();
 
@@ -34,10 +28,6 @@ export function LoadingScreen() {
     } else {
       window.addEventListener("load", finish, { once: true });
     }
-
-    return () => {
-      window.clearTimeout(mountTimer);
-    };
   }, []);
 
   if (!mounted || !visible) {
@@ -51,14 +41,8 @@ export function LoadingScreen() {
         fixed inset-0 z-[9999]
         flex flex-col items-center justify-center
         overflow-hidden
-        transition-opacity ease-out
-        ${
-          fading
-            ? "pointer-events-none opacity-0 duration-[600ms]"
-            : entered
-              ? "opacity-100 duration-300"
-              : "opacity-0 duration-300"
-        }
+        transition-opacity duration-500 ease-out
+        ${fading ? "pointer-events-none opacity-0" : "opacity-100"}
       `}
       style={{
         background:
