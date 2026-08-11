@@ -29,6 +29,10 @@ export function LoadingScreen() {
     } else {
       window.addEventListener("load", finish, { once: true });
     }
+
+    return () => {
+      window.clearTimeout(entryTimer);
+    };
   }, []);
 
   if (!visible) {
