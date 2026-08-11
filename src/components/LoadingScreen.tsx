@@ -4,13 +4,18 @@ const MIN_LOADING_MS = 1200;
 const FADE_OUT_MS = 550;
 
 export function LoadingScreen() {
+  const [mounted, setMounted] = useState(false);
+  const [entered, setEntered] = useState(false);
   const [visible, setVisible] = useState(true);
-  const [entered, setEntered] = useState(true);
   const [fading, setFading] = useState(false);
 
   useEffect(() => {
-    // Start entry fade-in shortly after mount so the opacity transition is visible
-    const entryTimer = window.setTimeout(() => setEntered(true), 30);
+    // Mount on the client after a brief tick so the entry fade-in plays cleanly
+    const mountTimer = window.setTimeout(() => {
+      setMounted(true);
+      // Trigger the opacity transition on the next paint
+      window.requestAnimationFrame(() => setEntered(true));
+    }, 30);
 
     const startAt = Date.now();
 
@@ -31,11 +36,11 @@ export function LoadingScreen() {
     }
 
     return () => {
-      window.clearTimeout(entryTimer);
+      window.clearTimeout(mountTimer);
     };
   }, []);
 
-  if (!visible) {
+  if (!mounted || !visible) {
     return null;
   }
 
