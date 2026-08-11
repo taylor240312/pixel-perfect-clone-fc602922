@@ -9,8 +9,8 @@ export function LoadingScreen() {
   const [fading, setFading] = useState(false);
 
   useEffect(() => {
-    // Start entry fade-in on the next frame
-    requestAnimationFrame(() => setEntered(true));
+    // Start entry fade-in shortly after mount so the opacity transition is visible
+    const entryTimer = window.setTimeout(() => setEntered(true), 30);
 
     const startAt = Date.now();
 
