@@ -3,16 +3,22 @@ const HOTMART_URL = "https://pay.hotmart.com/W107147642Y?checkoutMode=10";
 export function CtaButton({
   className = "",
   full = false,
+  scrollToBottom = false,
 }: {
   className?: string;
   full?: boolean;
+  scrollToBottom?: boolean;
 }) {
+  const href = scrollToBottom ? "#final" : HOTMART_URL;
+  const target = scrollToBottom ? undefined : "_blank";
+  const rel = scrollToBottom ? undefined : "noopener noreferrer";
+
   if (full) {
     return (
       <a
-        href={HOTMART_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+        href={href}
+        target={target}
+        rel={rel}
         className="block w-full"
       >
         <button
@@ -28,9 +34,9 @@ export function CtaButton({
 
   return (
     <a
-      href={HOTMART_URL}
-      target="_blank"
-      rel="noopener noreferrer"
+      href={href}
+      target={target}
+      rel={rel}
       className="inline-block"
     >
       <button
