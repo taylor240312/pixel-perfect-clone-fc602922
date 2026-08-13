@@ -172,7 +172,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center">
-            <CtaButton />
+            <CtaButton scrollToBottom />
           </div>
         </div>
       </section>
@@ -368,7 +368,7 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section className="py-8 px-4 bg-background">
+      <section id="final" className="py-8 px-4 bg-background">
         <div className="max-w-xl mx-auto">
           <h2 className="text-xs font-bold text-chocolate/60 text-center mb-3 uppercase tracking-widest">
             Preguntas frecuentes
