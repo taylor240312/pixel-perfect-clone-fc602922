@@ -1,14 +1,3 @@
-import provaSocial01 from "@/assets/prova-social-01-2.png.asset.json";
-import provaSocial02 from "@/assets/prova-social-02-2.png.asset.json";
-import provaSocial03 from "@/assets/prova-social-03.png.asset.json";
-import provaSocial04 from "@/assets/prova-social-04.png.asset.json";
-import provaSocial05 from "@/assets/prova-social-05.png.asset.json";
-import provaSocial06 from "@/assets/prova-social-06.png.asset.json";
-import provaSocial07 from "@/assets/prova-social-07.png.asset.json";
-import provaSocial08 from "@/assets/prova-social-08.png.asset.json";
-import provaSocial09 from "@/assets/prova-social-09.png.asset.json";
-import provaSocial10 from "@/assets/prova-social-10.png.asset.json";
-
 const ROW_A = [
   "/img/cheesecake.jpg",
   "/img/torta.jpg",
@@ -62,8 +51,20 @@ export function RecipesMarquee() {
   );
 }
 
-const DEPS_A = [provaSocial01.url, provaSocial02.url, provaSocial03.url, provaSocial04.url, provaSocial05.url];
-const DEPS_B = [provaSocial06.url, provaSocial07.url, provaSocial08.url, provaSocial09.url, provaSocial10.url];
+const DEPS_A = [
+  "/img/prova-social-01-2.png",
+  "/img/prova-social-02-2.png",
+  "/img/prova-social-03.png",
+  "/img/prova-social-04.png",
+  "/img/prova-social-05.png",
+];
+const DEPS_B = [
+  "/img/prova-social-06.png",
+  "/img/prova-social-07.png",
+  "/img/prova-social-08.png",
+  "/img/prova-social-09.png",
+  "/img/prova-social-10.png",
+];
 
 function DepCard({ src }: { src: string }) {
   return (
