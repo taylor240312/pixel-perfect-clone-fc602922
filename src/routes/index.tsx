@@ -3,7 +3,6 @@ import { Check, Star } from "lucide-react";
 import { CountdownBar } from "@/components/landing/CountdownBar";
 import { CtaButton } from "@/components/landing/CtaButton";
 import { RecipesMarquee, TestimonialsMarquee } from "@/components/landing/Marquees";
-import heroMockup from "@/assets/hero-mockup.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -147,7 +146,7 @@ function Index() {
             <img
               alt="300 Recetas de Postres Zero"
               className="w-full max-w-2xl mx-auto drop-shadow-2xl"
-              src={heroMockup.url}
+              src={"/img/hero-mockup.png"}
             />
           </div>
 
