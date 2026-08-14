@@ -4,14 +4,17 @@ export function CtaButton({
   className = "",
   full = false,
   scrollToBottom = false,
+  scrollTo,
 }: {
   className?: string;
   full?: boolean;
   scrollToBottom?: boolean;
+  scrollTo?: string;
 }) {
-  const href = scrollToBottom ? "#oferta" : HOTMART_URL;
-  const target = scrollToBottom ? undefined : "_blank";
-  const rel = scrollToBottom ? undefined : "noopener noreferrer";
+  const anchor = scrollTo ?? (scrollToBottom ? "oferta" : undefined);
+  const href = anchor ? `#${anchor}` : HOTMART_URL;
+  const target = anchor ? undefined : "_blank";
+  const rel = anchor ? undefined : "noopener noreferrer";
 
   if (full) {
     return (
