@@ -16,12 +16,22 @@ export function CtaButton({
   const target = anchor ? undefined : "_blank";
   const rel = anchor ? undefined : "noopener noreferrer";
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!anchor) return;
+    e.preventDefault();
+    const element = document.getElementById(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   if (full) {
     return (
       <a
         href={href}
         target={target}
         rel={rel}
+        onClick={handleClick}
         className="block w-full"
       >
         <button
@@ -40,6 +50,7 @@ export function CtaButton({
       href={href}
       target={target}
       rel={rel}
+      onClick={handleClick}
       className="inline-block"
     >
       <button
