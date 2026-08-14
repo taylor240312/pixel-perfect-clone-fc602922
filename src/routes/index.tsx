@@ -38,19 +38,19 @@ const BONUSES = [
   {
     title: "Tartas Dulces",
     desc: "Sin azúcar, sin gluten y sin lactosa",
-    price: "DE $39,90",
+    price: "DE $9,90",
     img: "/img/bonus-tortas.png",
   },
   {
     title: "Merienda de la Tarde",
     desc: "Sin azúcar, sin gluten y sin lactosa",
-    price: "DE $29,90",
+    price: "DE $8,90",
     img: "/img/bonus-lanche.png",
   },
   {
     title: "Mermeladas Caseras",
     desc: "Sin azúcar",
-    price: "DE $19,90",
+    price: "DE $8,20",
     img: "/img/bonus-geleias.png",
   },
 ];
@@ -171,7 +171,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center">
-            <CtaButton scrollToBottom />
+            <CtaButton />
           </div>
         </div>
       </section>
@@ -339,7 +339,7 @@ function Index() {
           </h2>
           <div className="bg-[#ebebeb] rounded-2xl border-2 border-cta-green shadow-xl p-5">
             <div className="mb-6 text-center">
-              <p className="text-gray-400 line-through text-2xl font-semibold">DE $97,00</p>
+              <p className="text-gray-400 line-through text-2xl font-semibold">DE $37,00</p>
               <p className="text-chocolate font-black mt-1 flex items-baseline justify-center gap-2">
                 <span className="text-xl font-semibold">POR</span>
                 <span className="text-5xl">$12,89</span>
