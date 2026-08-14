@@ -171,7 +171,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center">
-            <CtaButton />
+            <CtaButton scrollTo="testimonios" />
           </div>
         </div>
       </section>
@@ -220,7 +220,7 @@ function Index() {
       </section>
 
       {/* TESTIMONIOS */}
-      <section className="py-14 bg-background border-t border-border/40 overflow-hidden">
+      <section id="testimonios" className="py-14 bg-background border-t border-border/40 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center px-4 mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-chocolate mb-2">
             Lo que están <span className="text-brand-coral font-black">diciendo</span>
@@ -230,6 +230,9 @@ function Index() {
           </p>
         </div>
         <TestimonialsMarquee />
+        <div className="flex justify-center mt-10">
+          <CtaButton scrollTo="oferta" />
+        </div>
       </section>
 
       {/* 300 RECETAS */}
