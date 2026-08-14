@@ -9,7 +9,7 @@ export function CtaButton({
   full?: boolean;
   scrollToBottom?: boolean;
 }) {
-  const href = scrollToBottom ? "#final" : HOTMART_URL;
+  const href = scrollToBottom ? "#oferta" : HOTMART_URL;
   const target = scrollToBottom ? undefined : "_blank";
   const rel = scrollToBottom ? undefined : "noopener noreferrer";
 
