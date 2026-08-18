@@ -171,7 +171,7 @@ function Index() {
           </div>
 
           <div className="flex justify-center">
-            <CtaButton scrollTo="testimonios" />
+            <CtaButton scrollTo="testimonios">Quiero Ver Lo Que Dicen</CtaButton>
           </div>
         </div>
       </section>
@@ -231,7 +231,7 @@ function Index() {
         </div>
         <TestimonialsMarquee />
         <div className="flex justify-center mt-10">
-          <CtaButton scrollTo="beneficios-cta" />
+          <CtaButton scrollTo="beneficios-cta">Quiero Descubrir Sus Beneficios</CtaButton>
         </div>
       </section>
 
@@ -295,7 +295,7 @@ function Index() {
               </Benefit>
             </ul>
             <div id="beneficios-cta" className="flex justify-center">
-              <CtaButton scrollTo="oferta" />
+              <CtaButton scrollTo="oferta">Quiero Ver Los Bonos de Regalo</CtaButton>
             </div>
           </div>
         </div>
