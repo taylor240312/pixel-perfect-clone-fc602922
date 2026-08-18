@@ -7,11 +7,13 @@ export function CtaButton({
   full = false,
   scrollToBottom = false,
   scrollTo,
+  children = "Quiero Aprovechar el Descuento",
 }: {
   className?: string;
   full?: boolean;
   scrollToBottom?: boolean;
   scrollTo?: string;
+  children?: React.ReactNode;
 }) {
   const anchor = scrollTo ?? (scrollToBottom ? "oferta" : undefined);
   const href = anchor ? `#${anchor}` : HOTMART_URL;
