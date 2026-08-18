@@ -12,6 +12,8 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LoadingScreen } from "../components/LoadingScreen";
+import { META_PIXEL_BASE_CODE } from "../lib/meta-pixel";
+
 
 function NotFoundComponent() {
   return (
