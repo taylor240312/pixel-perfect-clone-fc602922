@@ -1,3 +1,5 @@
+import { trackInitiateCheckout } from "@/lib/meta-pixel";
+
 const HOTMART_URL = "https://pay.hotmart.com/W107147642Y?checkoutMode=10";
 
 export function CtaButton({
@@ -17,7 +19,11 @@ export function CtaButton({
   const rel = anchor ? undefined : "noopener noreferrer";
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    if (!anchor) return;
+    if (!anchor) {
+      // Checkout link: fire the Meta Pixel event, then let the browser navigate.
+      trackInitiateCheckout();
+      return;
+    }
     e.preventDefault();
     const element = document.getElementById(anchor);
     if (element) {
