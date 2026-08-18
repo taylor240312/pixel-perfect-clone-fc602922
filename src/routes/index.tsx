@@ -295,7 +295,7 @@ function Index() {
               </Benefit>
             </ul>
             <div className="flex justify-center">
-              <CtaButton />
+              <CtaButton scrollTo="oferta" />
             </div>
           </div>
         </div>
