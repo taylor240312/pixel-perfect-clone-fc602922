@@ -25,7 +25,6 @@ export function CtaButton({
       return;
     }
     e.preventDefault();
-    console.log("[DEBUG] anchor:", anchor, "element:", document.getElementById(anchor)?.getBoundingClientRect());
     const element = document.getElementById(anchor);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
