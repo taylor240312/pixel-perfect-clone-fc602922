@@ -231,7 +231,7 @@ function Index() {
         </div>
         <TestimonialsMarquee />
         <div className="flex justify-center mt-10">
-          <CtaButton scrollTo="beneficios-cta">Quiero Descubrir Sus Beneficios</CtaButton>
+          <CtaButton scrollTo="beneficios">Quiero Descubrir Sus Beneficios</CtaButton>
         </div>
       </section>
 
@@ -249,7 +249,7 @@ function Index() {
       </section>
 
       {/* BENEFICIOS */}
-      <section className="py-10 md:py-24 bg-background px-4">
+      <section id="beneficios" className="py-10 md:py-24 bg-background px-4">
         <div className="max-w-2xl mx-auto">
           <div className="bg-card rounded-2xl md:rounded-3xl shadow-xl shadow-brand-coral/5 border border-brand-coral/20 p-4 md:p-10 transform hover:shadow-2xl transition-shadow duration-500">
             <h2 className="text-lg md:text-3xl font-black text-brand-coral text-center mb-4 md:mb-8">
