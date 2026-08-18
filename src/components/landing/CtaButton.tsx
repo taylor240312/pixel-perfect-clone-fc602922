@@ -7,11 +7,13 @@ export function CtaButton({
   full = false,
   scrollToBottom = false,
   scrollTo,
+  children = "Quiero Aprovechar el Descuento",
 }: {
   className?: string;
   full?: boolean;
   scrollToBottom?: boolean;
   scrollTo?: string;
+  children?: React.ReactNode;
 }) {
   const anchor = scrollTo ?? (scrollToBottom ? "oferta" : undefined);
   const href = anchor ? `#${anchor}` : HOTMART_URL;
@@ -45,7 +47,7 @@ export function CtaButton({
           className={`w-full text-white font-bold text-base py-4 rounded-full shadow-md active:scale-95 transition-all duration-150 tracking-widest uppercase animate-cta-pulse ${className}`}
           style={{ background: "linear-gradient(rgb(110, 231, 122), rgb(52, 168, 83))" }}
         >
-          Quiero Aprovechar el Descuento
+          {children}
         </button>
       </a>
     );
@@ -67,7 +69,7 @@ export function CtaButton({
           textShadow: "rgba(0, 0, 0, 0.2) 0px 1px 2px",
         }}
       >
-        Quiero Aprovechar el Descuento
+        {children}
       </button>
     </a>
   );
