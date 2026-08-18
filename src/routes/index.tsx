@@ -231,7 +231,7 @@ function Index() {
         </div>
         <TestimonialsMarquee />
         <div className="flex justify-center mt-10">
-          <CtaButton scrollTo="oferta" />
+          <CtaButton scrollTo="beneficios-cta" />
         </div>
       </section>
 
