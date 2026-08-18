@@ -69,7 +69,7 @@ export function CtaButton({
           textShadow: "rgba(0, 0, 0, 0.2) 0px 1px 2px",
         }}
       >
-        Quiero Aprovechar el Descuento
+        {children}
       </button>
     </a>
   );
