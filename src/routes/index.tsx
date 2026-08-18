@@ -294,7 +294,7 @@ function Index() {
                 <span className="font-bold text-chocolate">todos tienen en casa</span>.
               </Benefit>
             </ul>
-            <div className="flex justify-center">
+            <div id="beneficios-cta" className="flex justify-center">
               <CtaButton scrollTo="oferta" />
             </div>
           </div>
