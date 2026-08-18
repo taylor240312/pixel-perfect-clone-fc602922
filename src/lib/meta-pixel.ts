@@ -26,6 +26,8 @@ declare global {
 export function trackInitiateCheckout() {
   try {
     if (typeof window !== "undefined" && typeof window.fbq === "function") {
+      // Temporary verification log (remove after testing)
+      console.log("[Meta Pixel] InitiateCheckout disparado");
       window.fbq("track", "InitiateCheckout");
     }
   } catch {
