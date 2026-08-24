@@ -12,7 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LoadingScreen } from "../components/LoadingScreen";
-import { PixelEventPanel } from "../components/pixel/PixelEventPanel";
+
 import { META_PIXEL_BASE_CODE } from "../lib/meta-pixel";
 
 
@@ -139,7 +139,6 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <LoadingScreen />
-      <PixelEventPanel />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
