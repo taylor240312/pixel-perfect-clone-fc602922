@@ -11,6 +11,21 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init','${META_PIXEL_ID}');
 fbq('track','PageView');
+(function(){
+  var _fbq = window.fbq;
+  window.fbq = function(){
+    try {
+      var a = Array.prototype.slice.call(arguments);
+      if (a[0] === 'track' || a[0] === 'trackCustom') {
+        console.log('[Meta Pixel] evento disparado:', a[1], a[2] || '');
+        window.__metaPixelEvents = window.__metaPixelEvents || [];
+        window.__metaPixelEvents.push({ event: a[1], data: a[2] || null, at: new Date().toISOString() });
+      }
+    } catch (e) {}
+    return _fbq.apply(this, arguments);
+  };
+  for (var k in _fbq) { try { window.fbq[k] = _fbq[k]; } catch (e) {} }
+})();
 `;
 
 declare global {
