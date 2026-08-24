@@ -20,6 +20,9 @@ fbq('track','PageView');
         console.log('[Meta Pixel] evento disparado:', a[1], a[2] || '');
         window.__metaPixelEvents = window.__metaPixelEvents || [];
         window.__metaPixelEvents.push({ event: a[1], data: a[2] || null, at: new Date().toISOString() });
+        try {
+          window.dispatchEvent(new Event('meta-pixel-event'));
+        } catch (e) {}
       }
     } catch (e) {}
     return _fbq.apply(this, arguments);
