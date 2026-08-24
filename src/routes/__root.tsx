@@ -12,7 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { LoadingScreen } from "../components/LoadingScreen";
-import { PixelEventPanel } from "../components/pixel/PixelEventPanel";
+
 import { META_PIXEL_BASE_CODE } from "../lib/meta-pixel";
 
 
